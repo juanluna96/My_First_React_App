@@ -13,7 +13,6 @@ function App() {
       ...citas,
       cita
     ]);
-    console.log(citas)
   }
 
   return (
