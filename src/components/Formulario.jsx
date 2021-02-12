@@ -68,6 +68,7 @@ const Formulario = ({ crearCita }) => {
                     :
                     null
             }
+
             <form onSubmit={ submitCita }>
                 <div className="form-group">
                     <label htmlFor="mascota">Nombre mascota</label>
@@ -89,7 +90,7 @@ const Formulario = ({ crearCita }) => {
                     <label htmlFor="sintomas">Síntomas</label>
                     <textarea id="sintomas" className="form-control" name="sintomas" rows="3" onChange={ actualizarState } value={ sintomas } ></textarea>
                 </div>
-                <button className="btn btn-primary btn-block" type="submit">Agendar cita</button>
+                <button className="btn btn-primary btn-block my-4" type="submit">Agendar cita</button>
             </form>
         </Fragment>
     )

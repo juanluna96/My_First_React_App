@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import Formulario from './components/Formulario'
+import Cita from './components/Cita'
 import './App.css'
 
 function App() {
@@ -24,11 +25,16 @@ function App() {
             <Formulario crearCita={ crearCita }></Formulario>
           </div>
           <div className="col-md-6">
-            2
+            <h2 className="text-center mb-4">Administra tus citas</h2>
+            <div className="overflow-auto" style={ { maxHeight: "570px" } }>
+              { citas.map(cita => (
+                <Cita key={ cita.id } cita={ cita }></Cita>
+              )) }
+            </div>
           </div>
         </div>
       </div>
-    </Fragment>
+    </Fragment >
   );
 }
 
